@@ -1,0 +1,107 @@
+<!-- Define o tipo de documento HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Título da sua página</title>
+
+    <!-- Estilo CSS interno -->
+    <style>
+        /* Altera a cor dos títulos <h1> e dos parágrafos <p> */
+        h1, p {
+            color: red;
+        }
+
+        /* Exemplo de classe (não está sendo usada corretamente no HTML) */
+        .cor-azul {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Conteúdo da página -->
+    <h1 class="cor-azul">CABULOSOOO</h1> <!-- Com classe que define a cor azul, mas sobrescrita pelo CSS global -->
+    
+    <h1>CABULOSO!</h1> <!-- Outro título H1 -->
+    
+    <h6>E O RIVAL??</h6> <!-- Título com menor peso -->
+
+    <!-- Parágrafo de exemplo (Lorem Ipsum) -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam molestias magnam ipsum similique corrupti, qui autem non optio quos.
+        Nulla reprehenderit unde corporis eligendi placeat maiores sequi optio iste omnis.
+    </p>
+
+    <!-- Lista não ordenada (bullet points) -->
+    <ul>
+        <li>Item 1</li>
+    </ul>
+
+    <!-- Lista ordenada (números) -->
+    <ol>
+        <li>Item 2</li>
+    </ol>
+
+    <!-- Ênfase em itálico -->
+    <em>Texto em itálico</em>
+
+    <!-- Ênfase em negrito -->
+    <strong>Texto em negrito</strong>
+
+    <!-- Comentários HTML -->
+    <!-- <br> = quebra de linha -->
+    <!-- <hr> = linha horizontal -->
+    <br>
+    <hr>
+
+    <!-- Link (âncora) -->
+    <!-- <a href="https://exemplo.com">Clique aqui</a> -->
+
+    <!-- Formulário -->
+    <h3>Formulários</h3>
+
+    <form action="" method="">
+        <!-- Campo de texto com rótulo -->
+        <label for="full-name">Nome:</label>
+        <input id="full-name" name="full-name" type="text" />
+
+        <!-- Campo com seleção de opções usando radio buttons -->
+        <fieldset>
+            <legend>Qual é o melhor time de futebol?</legend>
+            
+            <input id="time01" name="time" value="1" type="radio" checked>
+            <label for="time01">CRUZEIRO</label>
+
+            <input id="time02" name="time" value="2" type="radio">
+            <label for="time02">FLAMENGO</label>
+
+            <input id="time03" name="time" value="3" type="radio">
+            <label for="time03">PSG</label>
+        </fieldset>
+
+        <!-- Lista suspensa (select) -->
+        <label for="t-shirt">Tamanho da camiseta:</label>
+        <select id="t-shirt" name="t-shirt">
+            <option value="xs">Extra Pequeno</option>
+            <option value="s">Pequeno</option>
+            <option value="m">Médio</option>
+            <option value="l">Grande</option>
+        </select>
+
+        <!-- Campo de texto maior para descrição -->
+        <label for="abstract">Resumo:</label>
+        <textarea id="abstract" name="abstract"></textarea>
+
+        <!-- Botão de envio -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
